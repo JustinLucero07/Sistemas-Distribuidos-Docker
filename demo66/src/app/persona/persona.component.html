@@ -1,0 +1,19 @@
+<h2>Gestión de Personas</h2>
+
+<form (submit)="agregarPersona()">
+  <label for="nombre">Nombre:</label>
+  <input id="nombre" [(ngModel)]="nuevaPersona.nombre" name="nombre" required /><br/>
+
+  <label for="edad">Edad:</label>
+  <input id="edad" [(ngModel)]="nuevaPersona.edad" name="edad" required />
+
+  <button type="submit">Agregar Persona</button>
+</form>
+
+<hr>
+
+<ul>
+  <li *ngFor="let persona of personas">
+    {{ persona.nombre }} {{ persona.edad }} años
+  </li>
+</ul>
