@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class PersonaService {
 
-  private apiUrl = 'http://localhost:8080/jakarta-postgres-app/api/personas'; 
+  private apiUrl = '/api/personas'; 
 
   constructor(private http: HttpClient) {}
 
